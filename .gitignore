@@ -1,0 +1,8 @@
+node_modules
+/lib
+/coverage
+/dist
+/bench
+/test
+serve-browserbench/public/browserbench.bundle.js
+.DS_Store
