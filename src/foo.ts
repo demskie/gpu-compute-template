@@ -14,7 +14,16 @@ export const searchAndReplace = {
   "float vec2ToInt16(vec2);": gpu.functionStrings.vec2ToInt16,
   "vec2 int16ToVec2(float);": gpu.functionStrings.int16ToVec2,
   "void unpackBooleans(float, inout bool arr[8]);": gpu.functionStrings.unpackBooleans,
-  "void packBooleans(bool arr[8]);": gpu.functionStrings.packBooleans
+  "void packBooleans(bool arr[8]);": gpu.functionStrings.packBooleans,
+  "struct texcoord { float x, y, w; };": gpu.functionStrings.texcoord,
+  "texcoord addTexcoord(texcoord, float);": gpu.functionStrings.addTexcoord,
+  "texcoord subtractTexcoord(texcoord, float);": gpu.functionStrings.subtractTexcoord,
+  "texcoord oneSixteenthTexcoord(texcoord);": gpu.functionStrings.oneSixteenthTexcoord,
+  "texcoord oneFourthTexcoord(texcoord);": gpu.functionStrings.oneFourthTexcoord,
+  "texcoord oneHalfTexcoord(texcoord);": gpu.functionStrings.oneHalfTexcoord,
+  "texcoord doubleTexcoord(texcoord);": gpu.functionStrings.doubleTexcoord,
+  "texcoord quadrupleTexcoord(texcoord);": gpu.functionStrings.quadrupleTexcoord,
+  "texcoord sexdecupleTexcoord(texcoord);": gpu.functionStrings.sexdecupleTexcoord
 };
 
 const fooFrag = readFileSync(require.resolve("./shaders/foo.frag"), "utf8");
